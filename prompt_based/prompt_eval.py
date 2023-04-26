@@ -30,16 +30,22 @@ def all_data_evaluation(args):
     id2relation, id2samples = lamadata.get_samples()
 
     print(len(id2relation))
+    # print(id2relation)
 
     for relation_id in id2relation:
 
         relation = id2relation[relation_id]
         relation_label = relation["label"]
         relation_prompt = relation["template"]
+        print(relation_label)
+        print(relation_prompt)
         lama = id2samples[relation_id]
         lama_o = delete_overlap(lama)
 
         wiki_uni = load_wiki_uni(relation_id, model_prefix(args.model_name))
+        # print(wiki_uni)
+        # print("wiki")
+        # print(len(wiki_uni))
         wiki_uni_o = delete_overlap(wiki_uni)
 
         lama_p = model_wrapper.evaluate_samples(

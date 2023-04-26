@@ -170,6 +170,7 @@ class MLMWrapper(ModelWrapper):
     # one mask only
     def evaluate_samples(self, relation, samples, pass_obj=False, **kwargs):
         relation_prompt = relation["template"]
+        print(relation_prompt)
         input_texts = []
         gold_obj = []
         p_1 = 0

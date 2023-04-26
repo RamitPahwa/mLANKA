@@ -16,6 +16,7 @@ from matplotlib import rcParams
 
 # You can put the model path here
 MODEL_PATH = {
+    # 'bert-large-cased': 'bert-base-multilingual-cased',
     'bert-large-cased': 'bert-large-cased',
     'roberta-large': 'roberta-large',
 }
@@ -32,6 +33,7 @@ def build_model(model_name):
     elif model_prefix(model_name) == "bert":
         tokenizer = BertTokenizer.from_pretrained(model_path, do_lower_case=False)
         model = BertForMaskedLM.from_pretrained(model_path)
+        print(model)
     else:
         tokenizer = AutoTokenizer.from_pretrained(model_path, do_lower_case=False)
         model = AutoModelForMaskedLM.from_pretrained(model_path)
