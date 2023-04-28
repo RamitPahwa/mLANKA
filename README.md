@@ -1,4 +1,4 @@
-# LANKA
+# m-LANKA
 
 This is the source code for paper: **Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases** (ACL 2021, long paper)
 
