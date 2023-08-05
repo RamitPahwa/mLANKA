@@ -1,6 +1,6 @@
 # m-LANKA
 
-This is the source code for paper: **Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases** (ACL 2021, long paper)
+This is the source code for the NLP project that extends the following paper to multilingual language models: **Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases** (ACL 2021, long paper)
 
 ## Reference
 
